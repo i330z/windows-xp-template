@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-wrapper{
+    position: relative;
+    height: 100vh;
+    background-image: url("https://wallpaperaccess.com/full/1536061.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.1s; 
+}
+
+
+.taskbar{
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(
+180deg
+, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+    width: 100vw;
+    height: 30px;
+}
+
+
+.contact-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 500px;
+    background-color: antiquewhite;
+    box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0 0 3px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.taskbar-start {
+    height: 100%;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-style: italic;
+    border: none;
+    border-radius: 0px 10px 12px 0px;
+    box-shadow: 0px 5px 10px #79ce71 inset;
+    background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-bar{
+    height: 30px;
+}
+
+
+/* .title-bar {
+    font-family: Trebuchet MS;
+    background: linear-gradient(
+180deg
+,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+    padding: 8px 10px;
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+    font-size: 13px;
+    text-shadow: 1px 1px #0f1089;
+    height: 21px;
+}
+
+.title-bar-text{
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0;
+    margin-right: 24px;
+    padding-left: 3px;
+} */
+
+
+.whole{
+   display: absolute;
+   
+}
+
+.windows-loader{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.windows-loader img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.show-loader{
+    display: none !important;
+}
+
+.fade{
+    opacity: 1;
+}
